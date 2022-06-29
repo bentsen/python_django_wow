@@ -12,7 +12,7 @@ token = None
 token_expiry = 2000000000000
 token_lock = object
 
-
+#tak gallermus
 def get_data_from_api(region, path, params):
     params['access_token'] = create_access_token()
     url = 'https://%s.api.blizzard.com%s' % (region, path)
@@ -20,7 +20,7 @@ def get_data_from_api(region, path, params):
     data = response.json()
     return data
 
-
+#tak gallarmus
 def create_access_token(region='eu'):
     if is_token_valid():
         global token_expiry
